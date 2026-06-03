@@ -97,11 +97,11 @@ Travel Buddy AI Chatbot is an AI-powered travel planning application that helps 
 ### Home Page
 ![Home Page](screenshots/home-page.png)
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+## Dashboard
+![Dashboard](./screenshots/Dashboard.png)
 
-### Interactive Map
-![Map](screenshots/map.png)
+## Interactive Map
+![Map](./screenshots/Map.png)
 
 ### Multi Destination Planning
 ![Multi Destination](screenshots/multi-destination.png)
