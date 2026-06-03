@@ -1,0 +1,8 @@
+.env
+*.db
+__pycache__/
+*.pyc
+temp_restore_py/
+node_modules/
+venv/
+.venv/

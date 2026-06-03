@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+bcrypt
+python-jose[cryptography]
+pydantic
+langchain-groq
+langchain-core
+python-dotenv
+openai

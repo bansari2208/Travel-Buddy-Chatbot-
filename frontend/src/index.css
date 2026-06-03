@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-inter min-h-screen bg-fixed;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(79, 70, 229, 0.15), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.15), transparent 25%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-700/50 rounded-full hover:bg-slate-600/80 transition-colors;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center overflow-hidden bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-6 rounded-xl transition-all duration-300 shadow-lg shadow-indigo-600/20 active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center border border-white/10 hover:border-indigo-500 hover:bg-indigo-500/10 text-white font-medium py-2.5 px-6 rounded-xl transition-all duration-300 active:scale-95 bg-white/5 backdrop-blur-sm;
+  }
+  
+  .glass-card {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl;
+  }
+
+  .input-field {
+    @apply w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all placeholder-slate-500;
+  }
+  
+  .label-text {
+    @apply block text-sm font-medium text-slate-300 mb-2;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400;
+  }
+}
+
+
